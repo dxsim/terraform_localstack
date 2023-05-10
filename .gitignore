@@ -1,0 +1,5 @@
+venv
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+localstack_providers_override.tf
+.terraform/
