@@ -1,5 +1,6 @@
 See:https://onexlab-io.medium.com/localstack-s3-terraform-9b1554e2add8
 
+
 ### Installation 
 
 ## Option 1: Docker-compose 
@@ -35,3 +36,10 @@ Tflocal with Terraform Setup:
 https://docs.localstack.cloud/user-guide/integrations/terraform/
 
 https://registry.terraform.io/providers/hashicorp/aws/latest/docs/guides/custom-service-endpoints#localstack
+
+
+## Check port activity
+netstat -tunlp | grep 4566
+
+# Kill port
+fuser 4566/tcp -k
